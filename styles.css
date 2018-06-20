@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.bg {
+  background-image: url('img/1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+#quote__modal {
+  position: fixed;
+  top: 30%;
+  left: 25%;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  background: #ccc;
+  width: 50%;
+  height: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+}
+
+.quote__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.quote__input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 70%;
+  height: 100px;
+  font-family: inherit;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+}
+
+.quote__showModal {
+  background: black;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  width: auto;
+  outline: none;
+  float: right;
+}
+
+#quote__getRandomQuote {
+  background: black;
+  color: #fff;
+  border: none;
+  width: auto;
+  padding: 15px;
+  outline: none;
+}
+
+.quote__submit {
+  background: black;
+  color: #fff;
+  border: none;
+  width: auto;
+  padding: 15px;
+  outline: none;
+}
+
+.quote__closeModal {
+  color: black;
+  font-size: 2em;
+  margin-right: 10px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.quote__closeModal:hover {
+  color: red;
+}
+
+#quote__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(000, 000, 000, 0.5);
+  width: 80%;
+  padding: 3%;
+  color: aliceblue;
+}
+
+#quote__display {
+  font-size: 4em;
+  font-weight: bold;
+  text-align: left;
+  color: fff;
+}
+
+#quote__display:before,
+#quote__display:after {
+  position: relative;
+}
+
+#quote__display:before {
+  content: '“';
+  left: -0.2em;
+}
+
+#quote__display:after {
+  content: '”';
+  right: -0.2em;
+}
+
+@keyframes animatetop {
+  from {
+    top: 0%;
+    opacity: 0;
+  }
+  to {
+    top: 30%;
+    opacity: 1;
+  }
+}

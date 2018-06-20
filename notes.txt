@@ -1,0 +1,22 @@
+Code Validations
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. Submiting Quotes
+  * Ensure you check that empty fields and only spaces are not allowed.
+  * arrar.push quote 
+
+  
+2. Displays a quote
+  * All quotes must be displayed before repeating.
+
+
+3. Change the background image
+  * Put a color overlay on the image to aid legibility
+  * Ensure all images are use when getting random quotes
+
+  -----------------
+  Program Flow
+  Page Loads and fires off setInterval(getQuote,timeDelay)
+
+  when an array show
+  *shownArr.push() the array to shown arraylist
+  *check shownArr
